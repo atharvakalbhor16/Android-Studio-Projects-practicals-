@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editName" type="id" />
+    <item name="editPass" type="id" />
+    <item name="old_name" type="id" />
+    <item name="new_name" type="id" />
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonIndia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="India" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLondan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Londan" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNewYork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New York" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEuropeanEmpire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="European Empire" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="132dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="234dp"
+            android:layout_marginBottom="51dp"
+            android:text="Capture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33">
+
+        <CheckBox
+            android:id="@+id/checkBoxTransparency"
+            android:layout_width="111dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="39dp"
+            android:text="Transparency" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTint"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="96dp"
+            android:text="Tint" />
+
+        <CheckBox
+            android:id="@+id/checkBoxReSize"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="153dp"
+            android:text="Resize" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="227dp"
+            android:layout_marginBottom="90dp"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="33">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="145dp"
+            android:layout_marginEnd="52dp"
+            android:clickable="true"
+            android:enabled="true"
+            android:minHeight="48dp"
+            android:text="Switch" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="282dp"
+            android:layout_height="163dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="125dp"
+            android:inputType="textMultiLine"
+            android:text="TextView"
+            android:textSize="34sp" />
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal"
+            android:text="10:10 am"
+            android:textSize="45sp"
+            android:format12Hour="hh:mm a"/>
+    </RelativeLayout>
+</LinearLayout>

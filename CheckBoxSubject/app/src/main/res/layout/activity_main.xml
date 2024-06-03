@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8FFAB"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/dm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="16dp"
+        android:text="Data Mining"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/python" />
+
+    <CheckBox
+        android:id="@+id/cs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="16dp"
+        android:text="CS"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/python"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/java" />
+
+    <CheckBox
+        android:id="@+id/python"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="16dp"
+        android:text="Python"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/dm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cs" />
+
+    <CheckBox
+        android:id="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="16dp"
+        android:text="Android"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/java"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="16dp"
+        android:text="Java"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/android" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="275dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="72dp"
+        android:background="#D6FFA7"
+        android:fontFamily="@font/headland_one"
+        android:text="Please select the subject"
+        android:textColor="#263238"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Toogle_Button</string>
+    <string name="bluetooth_off">Bluetooth OFF</string>
+    <string name="bluetooth">BlueTooth</string>
+    <string name="bluetooth_on">Bluetooth ON</string>
+    <string name="toggle_button_demo">Toggle Button Demo</string>
+</resources>
